@@ -20,8 +20,8 @@ Or you can use directly a Pillow Image instance:
 from dominantcolors import get_dominant_colors_for
 from PIL import Image
 
-image = Image.open("/path/to/image.jpg", num_colors=3)
-dominant_colors = get_dominant_colors_for(image)
+image = Image.open("/path/to/image.jpg")
+dominant_colors = get_dominant_colors_for(image, num_colors=3)
 ```
 
 ## Performance
